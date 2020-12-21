@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>F**CS</title>
+  
+  <subtitle>TeamBlog</subtitle>
+  <link href="https://fuck-cs.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://fuck-cs.github.io/"/>
+  <updated>2020-12-21T11:49:26.368Z</updated>
+  <id>https://fuck-cs.github.io/</id>
+  
+  <author>
+    <name>Fuck-CS</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://fuck-cs.github.io/2020/12/21/hello-world/"/>
+    <id>https://fuck-cs.github.io/2020/12/21/hello-world/</id>
+    <published>2020-12-21T11:49:26.368Z</published>
+    <updated>2020-12-21T11:49:26.368Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="FAQ" scheme="https://fuck-cs.github.io/categories/FAQ/"/>
+    
+    
+    <category term="Hexo教程" scheme="https://fuck-cs.github.io/tags/Hexo%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux用户界面美化</title>
+    <link href="https://fuck-cs.github.io/2020/12/21/Linux%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/"/>
+    <id>https://fuck-cs.github.io/2020/12/21/Linux%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/</id>
+    <published>2020-12-21T06:45:39.000Z</published>
+    <updated>2020-12-21T06:45:39.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Linux用户界面美化&quot;&gt;&lt;a href=&quot;#Linux用户界面美化&quot; class=&quot;headerlink&quot; title=&quot;Linux用户界面美化&quot;&gt;&lt;/a&gt;Linux用户界面美化&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;   </summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://fuck-cs.github.io/categories/Linux/"/>
+    
+    <category term="主题美化" scheme="https://fuck-cs.github.io/categories/Linux/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+    
+    
+    <category term="Linux" scheme="https://fuck-cs.github.io/tags/Linux/"/>
+    
+    <category term="界面美化" scheme="https://fuck-cs.github.io/tags/%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+</feed>
