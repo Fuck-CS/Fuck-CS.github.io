@@ -29,7 +29,7 @@
   
     <meta name="description" content="技术分享">
   
-<link rel="icon" type="image/x-icon" href="/img/logoA.png">
+
   <!-- feed -->
   
     <link rel="alternate" href="/atom.xml" title="F**CS" type="application/atom+xml">
@@ -142,24 +142,26 @@
             
             
               <li>
-                <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fas fa-cog fa-fw'></i>暗夜
-                </a>
-              <li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                <a class="menuitem flat-box faa-parent animated-hover" 
                   
                   
-                  
-                    id="friends"
                   >
-                  <i class='fas fa-link fa-fw'></i>友链
+                  <i class='fas fa-cog fa-fw'></i>设置
                 </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fas fa-moon fa-fw'></i>暗夜
+                </a>
+              <li>
+            
+          
+                    
+                  </ul>
                 
               </li>
             
@@ -250,24 +252,26 @@
               
             
               <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                  
+                  
+                  >
+                  <i class='fas fa-cog fa-fw'></i>设置
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fas fa-cog fa-fw'></i>暗夜
+                  <i class='fas fa-moon fa-fw'></i>暗夜
                 </a>
               <li>
             
           
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
-                  
-                  
-                  
-                    id="friends"
-                  >
-                  <i class='fas fa-link fa-fw'></i>友链
-                </a>
+                    
+                  </ul>
                 
               </li>
             
@@ -303,15 +307,13 @@
     
         <div id="half" class='cover-wrapper  search' style="display: ;">
           
-            <div class='cover-bg lazyload placeholder' data-bg="img/background.png"></div>
+            <div class='cover-bg lazyload placeholder' data-bg="/img/background.png"></div>
           
           <div class='cover-body'>
   <div class='top'>
     
       <img no-lazy class='logo' src='/img/logoB.png'/>
     
-    
-      <p class="title">F**CS</p>
     
     
   </div>
@@ -327,6 +329,13 @@
     <div class='menu navigation'>
       <div class='list-h'>
         
+          
+            <a href="/"
+              
+              
+              id="home">
+              <i class='fas fa-home fa-fw'></i><p>主页</p>
+            </a>
           
             <a href="/archives/"
               
@@ -370,6 +379,8 @@
   <section class="post-list">
     
       
+        
+          
         
           
         
@@ -448,12 +459,13 @@ Qu...
   <div class='md'>
     
       
-            很多新手第一次接触发行版就被那“具有年代感”的桌面吓到了
-    天哪！它就像隔壁王奶奶的大花棉裤一样，简直糟透了！
-    你绝对不想穿着这条棉裤，然后走在大街上大喊道：“嘿！伙计们，快来瞧！”
-    骚年，它需要得到你的“救赎”。让我们来“美化”它吧！
+        很多新手第一次接触发行版就被那“具有年代感”的桌面吓到了天哪！它就像隔壁王奶奶的大花棉裤一样，简直糟透了！你绝对不想穿着这条棉裤，然后走在大街上大喊道：“嘿！伙计们，快来瞧！”骚年，它需要得到你的“救赎”。让我们来“美化”它吧！
 用户界面
 在谈及美化之前我们需要先明白“用户界面”指的是什么
+
+
+
+如上图所示
 
 
       
@@ -568,7 +580,7 @@ Qu...
     
   
 
-  <section class="widget category shadow desktop">
+  <section class="widget category shadow desktop mobile">
     
   <header>
     
@@ -603,24 +615,127 @@ Qu...
   
 
   
-    
-    
-  
 
-  <section class="widget tagcloud shadow desktop mobile">
+  
     
+    
+
+<section class="widget shadow desktop mobile">
+  
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
     
   </header>
 
 
-    <div class='content'>
-      <a href="/tags/Hexo%E6%95%99%E7%A8%8B/" style="font-size: 14px; color: #999">Hexo教程</a> <a href="/tags/Linux/" style="font-size: 14px; color: #999">Linux</a> <a href="/tags/%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/" style="font-size: 14px; color: #999">界面美化</a>
-    </div>
-  </section>
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>2 篇</div>
+        </div>
+      
 
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+        </div>
+        <script>
+          var BirthDay = new Date(new Date('2020/01/01'));
+          var today = new Date();
+          var timeold = (today.getTime() - BirthDay.getTime());
+          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
+          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
+        </script>
+      
+
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          
+          <div><span id="lc-uv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          
+          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          
+            <div id="last-update" style="display: none;">Tue Dec 22 2020 20:34:31 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2020-12-22 日</div>
+          
+        </div>
+        
+        <script>
+          function timeago(dateTimeStamp) {
+              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
+              var hour = minute * 60;
+              var day = hour * 24;
+              var week = day * 7;
+              var month = day * 30;
+              var now = new Date().getTime(); //获取当前时间毫秒
+              var diffValue = now - dateTimeStamp; //时间差
+              if (diffValue < 0) {
+                  return;
+              }
+              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
+              var hourC = diffValue / hour;
+              var dayC = diffValue / day;
+              var weekC = diffValue / week;
+              var monthC = diffValue / month;
+              if (monthC >= 1 && monthC <= 3) {
+                  result = " " + parseInt(monthC) + " 月前"
+              } else if (weekC >= 1 && weekC <= 3) {
+                  result = " " + parseInt(weekC) + " 周前"
+              } else if (dayC >= 1 && dayC <= 6) {
+                  result = " " + parseInt(dayC) + " 天前"
+              } else if (hourC >= 1 && hourC <= 23) {
+                  result = " " + parseInt(hourC) + " 小时前"
+              } else if (minC >= 1 && minC <= 59) {
+                  result = " " + parseInt(minC) + " 分钟前"
+              } else if (diffValue >= 0 && diffValue <= minute) {
+                  result = "刚刚"
+              } else {
+                  var datetime = new Date();
+                  datetime.setTime(dateTimeStamp);
+                  var Nyear = datetime.getFullYear();
+                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
+                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
+                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+                  result = Nyear + "-" + Nmonth + "-" + Ndate
+              }
+              return result;
+          }
+          var lastUpDate = document.getElementById('last-update').innerHTML;
+          try {
+            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
+          } catch (error) {
+            document.getElementById('last-update-show').innerHTML = '2020-12-22 日';
+          }
+        </script>
+        
+      
+    </div>
+  </div>
+</section>
 
   
 
@@ -691,14 +806,6 @@ Qu...
       
     
       
-        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
-</div>
-      
-    
-      
-        
-          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
-</div>
         
       
     
@@ -799,7 +906,11 @@ var loadCSS = function( href, before, media, attributes ){
   loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
   
   
+  loadCSS("https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css", window.volantis.loadcss);
   
+  
+  
+  loadCSS("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/styles/solarized-light.min.css", window.volantis.loadcss);
   
 </script>
 <!-- required -->
@@ -1297,6 +1408,13 @@ function setSearchService() {
 
 
 
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
 
 
   <script defer>
@@ -1780,6 +1898,10 @@ document.addEventListener("pjax:success", listennSidebarTOC);
             pjax_fancybox();
           }
         
+        
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block);
+        });
         
         
         

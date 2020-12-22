@@ -58,7 +58,7 @@
 <body>
   
 
-<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -138,24 +138,26 @@
             
             
               <li>
-                <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fas fa-cog fa-fw'></i>暗夜
-                </a>
-              <li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                <a class="menuitem flat-box faa-parent animated-hover" 
                   
                   
-                  
-                    id="friends"
                   >
-                  <i class='fas fa-link fa-fw'></i>友链
+                  <i class='fas fa-cog fa-fw'></i>设置
                 </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fas fa-moon fa-fw'></i>暗夜
+                </a>
+              <li>
+            
+          
+                    
+                  </ul>
                 
               </li>
             
@@ -246,24 +248,26 @@
               
             
               <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                  
+                  
+                  >
+                  <i class='fas fa-cog fa-fw'></i>设置
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fas fa-cog fa-fw'></i>暗夜
+                  <i class='fas fa-moon fa-fw'></i>暗夜
                 </a>
               <li>
             
           
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
-                  
-                  
-                  
-                    id="friends"
-                  >
-                  <i class='fas fa-link fa-fw'></i>友链
-                </a>
+                    
+                  </ul>
                 
               </li>
             
@@ -297,17 +301,15 @@
     <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper post search' style="display: none;">
+        <div id="half" class='cover-wrapper post search' style="display: ;">
           
-            <div class='cover-bg lazyload placeholder' data-bg="img/background.png"></div>
+            <div class='cover-bg lazyload placeholder' data-bg="/img/background.png"></div>
           
           <div class='cover-body'>
   <div class='top'>
     
       <img no-lazy class='logo' src='/img/logoB.png'/>
     
-    
-      <p class="title">F**CS</p>
     
     
   </div>
@@ -323,6 +325,13 @@
     <div class='menu navigation'>
       <div class='list-h'>
         
+          
+            <a href="/"
+              
+              
+              id="home">
+              <i class='fas fa-home fa-fw'></i><p>主页</p>
+            </a>
           
             <a href="/archives/"
               
@@ -380,8 +389,8 @@
             
 <div class='new-meta-item author'>
   <a class='author' target="_blank" href="https://github.com/Fuck-CS" rel="nofollow noopener">
-    <img no-lazy src="img/logoA.png">
-    <p>F**CS</p>
+    <img no-lazy src="/img/logoA.png">
+    <p></p>
   </a>
 </div>
 
@@ -452,7 +461,7 @@
           <blockquote>
             
               
-                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+                <p>博客内容遵循(CC BY-NC-SA 4.0)协议</p>
 
               
             
@@ -526,9 +535,7 @@
       
         <a class='next' href='/2020/12/21/Linux%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/'>
           <p class='title'>Linux用户界面美化<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>    很多新手第一次接触发行版就被那“具有年代感”的桌面吓到了
-    天哪！它就像隔壁王奶奶的大花棉裤一样，简直糟透了！
-    你绝对不想穿着这条棉裤，然后走在大街上大喊道：“嘿！伙计们，...</p>
+          <p class='content'>很多新手第一次接触发行版就被那“具有年代感”的桌面吓到了天哪！它就像隔壁王奶奶的大花棉裤一样，简直糟透了！你绝对不想穿着这条棉裤，然后走在大街上大喊道：“嘿！伙计们，快来瞧！”骚年，它需要得到你...</p>
         </a>
       
     </div>
@@ -584,7 +591,7 @@
 
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.add("show");
+  l_header.classList.remove("show");
   
 </script>
 
@@ -632,14 +639,6 @@
       
     
       
-        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
-</div>
-      
-    
-      
-        
-          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
-</div>
         
       
     
@@ -740,7 +739,11 @@ var loadCSS = function( href, before, media, attributes ){
   loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
   
   
+  loadCSS("https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css", window.volantis.loadcss);
   
+  
+  
+  loadCSS("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/styles/solarized-light.min.css", window.volantis.loadcss);
   
 </script>
 <!-- required -->
@@ -1238,6 +1241,13 @@ function setSearchService() {
 
 
 
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
 
 
   <script defer>
@@ -1721,6 +1731,10 @@ document.addEventListener("pjax:success", listennSidebarTOC);
             pjax_fancybox();
           }
         
+        
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block);
+        });
         
         
         
